@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="projetoforms.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+    <div class="btnBack">
+      <a href="./../dist/index.html"><button class="glow-on-hover" type="button">Home</button></a>
+    </div> 
+    <div class="box">
+      <form action="">
+          <fieldset>
+          <legend><b>Fórmulário de Contato</b></legend>
+          <br />
+          <div class="inputBox">
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              class="inputUser"
+              required 
+            />
+            <label for="nome" class="labelInput">Nome completo</label>
+          </div>
+          <br /><br />
+          <div class="inputBox">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="inputUser"
+              required 
+            />
+            <label for="email" class="labelInput">Email</label>
+          </div>
+          <br /><br />
+          <div class="inputBox">
+            <input
+              type="tel"
+              name="telefone"
+              id="telefone"
+              class="inputUser" 
+              required />
+            
+            <label for="telefone" class="labelInput">Telefone</label>
+          </div>
+          <br /><br />
+          <div class="inputBox">
+            <input
+              type="text"
+              name="text"
+              id="empresa"
+              class="inputUser"
+              required
+            />
+            <br /><br />
+            <label for="empresa" class="labelInput">Nome da Empresa</label>
+          </div>
+          <label for="mensagem">Mensagem:</label>
+          <div class="inputBox">
+          <textarea
+            placeholder="Digite sua mensagem..."
+            cols="60"
+            rows="5"
+            id="mensagem"
+            class="inputUser"
+            required minlength 20
+          ></textarea>
+          <br /><br />
+          <br /><br />
+          <input id="submit" type="submit" value="Enviar" onclick=" nomeAlertaFuncao();" />
+        </fieldset>
+      </form>
+    </div></div>
+  </body>
+</html>
